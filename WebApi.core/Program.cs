@@ -16,6 +16,7 @@ namespace WebApi.core
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
+                .UseUrls("http://*:8001")
                 .UseStartup<Startup>()
                 .Build();
 
