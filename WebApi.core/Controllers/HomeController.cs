@@ -11,7 +11,7 @@ namespace WebApi.core.Controllers
     [Route("/")]
     public class HomeController : Controller
     {
-        // GET: api/home
+        // GET: /
         [HttpGet]
         public IActionResult Get()
         {

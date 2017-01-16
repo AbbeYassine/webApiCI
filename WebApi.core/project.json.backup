@@ -46,9 +46,7 @@
       "web.config",
       "docker-compose.yml",
       "Dockerfile",
-      ".dockerignore",
-      "Dockerfile.debug",
-      "docker-compose.debug.yml"
+      ".dockerignore"
     ]
   },
   "scripts": {
