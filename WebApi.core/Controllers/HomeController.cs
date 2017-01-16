@@ -15,7 +15,7 @@ namespace WebApi.core.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(".NET Core V1.1.0, serveur running! check : GET: /api/values");
+            return Ok(".NET Core V1.1.0, serveur is running ! check : GET: /api/values");
         }
         
     }
