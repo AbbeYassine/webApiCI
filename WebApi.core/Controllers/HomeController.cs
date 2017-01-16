@@ -8,10 +8,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.core.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("/")]
     public class HomeController : Controller
     {
-        // GET: api/values
+        // GET: api/home
         [HttpGet]
         public IActionResult Get()
         {
