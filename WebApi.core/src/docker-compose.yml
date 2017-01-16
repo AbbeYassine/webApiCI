@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  webapi.core:
+    image: webapi.core
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
