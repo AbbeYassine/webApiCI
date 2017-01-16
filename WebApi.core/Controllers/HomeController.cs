@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+using System.Net.Http.Headers;
 
 namespace WebApi.core.Controllers
 {
@@ -13,9 +13,17 @@ namespace WebApi.core.Controllers
     {
         // GET: /
         [HttpGet]
-        public IActionResult Get()
+        public JsonResult Get()
         {
-            return Ok(".NET Core V1.1.0, serveur is running ! check : GET: /api/values");
+            var returnObject = new
+            {
+                DotnetVersion= ".NET Core V1.1.0",
+                ServerStatus="Green",
+                Description=".Net Core Project for DevOps - Vynd",
+                AvailableAPIs= "GET: /api/values"
+            };
+
+            return Json(returnObject);
         }
         
     }
