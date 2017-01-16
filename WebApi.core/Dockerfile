@@ -1,6 +1,6 @@
 FROM microsoft/dotnet:latest
 
-COPY ./bin/Debug/netcoreapp1.0/publish /app/
+COPY ./bin/Debug/netcoreapp1.0/debian.8-x64/publish /app/
 
 WORKDIR /app
 
