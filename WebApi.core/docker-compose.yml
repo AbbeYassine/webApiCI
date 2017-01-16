@@ -2,9 +2,9 @@ version: '2'
 
 services:
   webapi.core:
-    image: user/webapi.core${TAG}
+    image: webapi.core
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "80"
+      - "8001:8001"

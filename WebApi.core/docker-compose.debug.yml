@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  webapi.core:
+    image: webapi.core:debug
+    build:
+      context: .
+      dockerfile: Dockerfile.debug
+    ports:
+      - "8001:8001"
+    environment:
+      - REMOTE_DEBUGGING

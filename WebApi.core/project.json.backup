@@ -26,7 +26,8 @@
   },
   "runtimes": {
     "ubuntu.16.04-x64": {},
-    "win10-x64": {}
+    "win10-x64": {},
+    "debian.8-x64": {}
   },
   "buildOptions": {
     "emitEntryPoint": true,
@@ -46,7 +47,9 @@
       "web.config",
       "docker-compose.yml",
       "Dockerfile",
-      ".dockerignore"
+      ".dockerignore",
+      "Dockerfile.debug",
+      "docker-compose.debug.yml"
     ]
   },
   "scripts": {
